@@ -1,0 +1,26 @@
+.headStyle {
+  background-color: burlywood;
+}
+.imgStyle {
+  width: 50px;
+  margin: 2px;
+}
+.divStyle {
+  margin-top: 20px;
+}
+/* table > tbody > tr:hover {
+  font-size: larger;
+} */
+table > tbody > tr:hover {
+  font-size: larger;
+}
+table > tbody > tr:nth-child(1) {
+  font-size: small;
+}
+table > tbody > tr:last-child {
+  font-weight: bolder;
+}
+#test::first-line {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: blue;
+}

@@ -1,0 +1,33 @@
+/*
+        element selector
+        */
+/*
+        div {
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            border-radius: 10px;
+        }*/
+
+/*
+        id selector
+        */
+/*
+        #divName,
+        #divEmail {
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            border-radius: 10px;
+        }
+        */
+
+/*
+        class selector
+        */
+.myStyle {
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+}
