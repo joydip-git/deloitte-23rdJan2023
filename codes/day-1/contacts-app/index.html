@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts App</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            Enter Contact Details:
+        </legend>
+        <form>
+            <div>
+                <label for="txtName">Enter Name: &nbsp;</label>
+                <input type="text" id="txtName">
+            </div>
+            <br>
+            <div>
+                <label for="txtEmail">Enter Email: &nbsp;</label>
+                <input type="email" id="txtEmail">
+            </div>
+            <br>
+            <div>
+                <label for="txtMobile">Enter Mobile: &nbsp;</label>
+                <input type="text" id="txtMobile">
+            </div>
+            <br>
+            <div>
+                <!--    <label for="txtLocation">Enter Location: &nbsp;</label> -->
+                <!-- <input type="text" id="txtLocation"> -->
+                <label for="ddlLocation">Select Location: &nbsp;</label>
+                <select id="ddlLocation">
+                    <option value="0" selected disabled>--select--</option>
+                    <option value="1">Bangalore</option>
+                    <option value="2">Hyderabad</option>
+                    <option value="3">Pune</option>
+                    <option value="4">Noida</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="txtAddress">Enter Address:</label>
+                <br>
+                <textarea id="txtAddress" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <div>
+                <button type="button">Add Contact</button>
+            </div>
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
