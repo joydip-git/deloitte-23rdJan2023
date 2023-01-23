@@ -5,3 +5,20 @@ NGINX
 Brower's DOM (Document Object Library) library => window, document, console etc.
 
 CSS: Cascading Stylesheet
+
+CSS-property name: value;
+width:300px
+
+web apps:
+event-driven programming
+
+
+resAdd = undefined/25
+add = function(a,b){}
+resSub= undefined
+subtract = undefined
+
+variable declarations are hoisted in JS (with initial value 'undefined')
+function declarations are hoisted in JS (with function name assigned to the function)
+function expressions are NOT hoisted in JS (with variable name assigned to undefined)
+
