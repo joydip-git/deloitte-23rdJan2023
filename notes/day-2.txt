@@ -1,0 +1,6 @@
+1. JS data types
+2. operators
+3. control flow statements (for..in, for..of)
+4. array (push, shift, unshift, slice, splice)
+5. new features in JS: let, const keywords, object destructuring, spread operator
+6. objects in JS
