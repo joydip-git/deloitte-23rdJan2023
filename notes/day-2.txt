@@ -2,5 +2,5 @@
 2. operators
 3. control flow statements (for..in, for..of)
 4. array (push, shift, unshift, slice, splice)
-5. new features in JS: let, const keywords, object destructuring, spread operator
+5. new features in JS: let, const keywords, object destructuring, spread operator, class, constructor, templated string/string interpolation, setter-getter
 6. objects in JS
