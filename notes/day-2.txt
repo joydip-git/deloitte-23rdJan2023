@@ -1,6 +1,9 @@
 1. JS data types
 2. operators
 3. control flow statements (for..in, for..of)
-4. array (push, shift, unshift, slice, splice)
-5. new features in JS: let, const keywords, object destructuring, spread operator, class, constructor, templated string/string interpolation, setter-getter
-6. objects in JS
+4. array (push, shift, unshift, slice, splice, filter, sort, forEach, map, find, findIndex)
+5. new features in JS: let, const keywords, object destructuring, spread operator, class, constructor, templated string/string interpolation, setter-getter, private members
+6. objects in JS:
+		a. object literal syntax
+		b. constructor function
+		c. class-constructor, getter and setter

@@ -1,39 +1,3 @@
-/*
-//object literal syntax:
-
-const dellXpsObj = {
-    id: 2,
-    name: 'Dell XPS',
-    price: 120000,
-    rating: 4,
-    imagePath: ''
-}
-const iPhone13Obj = {
-    id: 1,
-    name: 'iPhone13',
-    price: 140000,
-    rating: 4.6,
-    imagePath: ''
-}
-const hpProbookObj = {
-    id: 3,
-    name: 'HP Probook',
-    price: 100000,
-    rating: 4.5,
-    imagePath: ''
-}
-*/
-//constructor function
-// function product(pid, pname, pprice, prating, pimage) {
-//     this.id = pid
-//     this.name = pname
-//     this.rating = prating
-//     this.imageUrl = pimage
-//     this.price = pprice
-//     this.print = function () {
-//         return `${this.name}, ${this.price}, ${this.rating}`
-//     }
-// }
 class Product {
     #id
     #name
@@ -56,13 +20,13 @@ class Product {
     get name() {
         return this.#name
     }
-    set name() {
+    set name(val) {
         this.#name = val
     }
     get price() {
         return this.#price
     }
-    set price() {
+    set price(val) {
         this.#price = val
     }
     get imageUrl() {
@@ -82,13 +46,15 @@ class Product {
     }
 }
 const dellXpsObj = new Product(2, 'Dell XPS', 120000, 4, '')
-dellXpsObj.imageUrl = ''
+// dellXpsObj.name = 'Dell XPS'
+// console.log(dellXpsObj.name)
 const iPhone13Obj = new Product(1, 'iPhone13', 140000, 4.6, '')
 const hpProbookObj = new Product(3, 'HP Probook', 100000, 4.5, '')
-//const products = [dellXpsObj, iPhone13Obj, hpProbookObj]
 const products = []
+//const products = [dellXpsObj, iPhone13Obj, hpProbookObj]
 products.push(dellXpsObj, iPhone13Obj, hpProbookObj)
 
+/*
 let choice = Number(window.prompt('enter choice[1/2/3]: ', '0'))
 
 switch (choice) {
@@ -138,3 +104,4 @@ result
             console.log(p.)
         }
     )
+    */
