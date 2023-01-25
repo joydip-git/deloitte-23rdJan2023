@@ -1,5 +1,23 @@
+function showFriendName() {
+    const selectObject = document.getElementById('ddlFriends')
+    const allOptions = selectObject.options
+    const selectedOptionIndex = selectObject.selectedIndex
+    const selectedOption = allOptions[selectedOptionIndex]
+    window.alert(`You selected: ${selectedOption.text}`)
+}
+function getSelectedFriend(e) {    //console.log((e.target.options[e.target.selectedIndex]).text)
+    const selectObject = e.target
+    const allOptions = selectObject.options
+    const selectedOptionIndex = selectObject.selectedIndex
+    const selectedOption = allOptions[selectedOptionIndex]
+    window.alert(selectedOption.text)
+
+}
 function createFriendsSelect() {
     const selectElement = document.createElement('select')
+    selectElement.setAttribute('id', 'ddlFriends')
+    //selectElement.addEventListener('change', showFriendName)
+    selectElement.addEventListener('change', getSelectedFriend)
     // selectElement.style.backgroundColor = 'lime'
     // selectElement.style.fontFamily = 'Segoe UI'
 
