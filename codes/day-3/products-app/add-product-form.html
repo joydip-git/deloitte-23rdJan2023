@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Product</title>
+    <!--Bootstrap links-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+    <!--Bootswatch Theme link-->
+    <link rel="stylesheet" href="./styles/theme.css">
+
+    <!--custom CSS file link-->
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <!--source code script files link-->
+    <script src="./src/models/product.js">
+    </script>
+    <script src="./src/add-product-form.js">
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="txtId" class="form-label mt-4">Id:&nbsp;</label>
+                <input type="number" id="txtId" class="form-control" placeholder="enter id here">
+            </div>
+            <div class="form-group">
+                <label for="txtName" class="form-label mt-4">Name:&nbsp;</label>
+                <input type="text" id="txtName" class="form-control" placeholder="enter name here">
+            </div>
+            <div class="form-group">
+                <label for="txtPrice" class="form-label mt-4">Price:&nbsp;</label>
+                <input type="number" id="txtPrice" class="form-control" placeholder="enter price here">
+            </div>
+            <div class="form-group">
+                <label for="txtRating" class="form-label mt-4">Rating:&nbsp;</label>
+                <input type="number" id="txtRating" class="form-control" placeholder="enter Rating here">
+            </div>
+            <div class="form-group">
+                <label for="fileImage" class="form-label mt-4">Upload Image:&nbsp;</label>
+                <input type="file" id="fileImage" class="form-control" placeholder="choose an image file">
+            </div>
+            <div class="centerStyle">
+                <button type="button" class="btn btn-primary submitStyle" id="btnAdd">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -25,34 +25,41 @@ function createRow(p) {
 function loadData() {
     const tbodyElement = document
         .getElementById('tblProductsBody')
-    products.forEach(
-        function (p) {
-            const row = createRow(p)
-            tbodyElement.appendChild(row)
-        }
-    )
+    if (sessionStorage.getItem('products')) {
+        const allProducts = JSON.parse(sessionStorage.getItem('products'))
+        allProducts.forEach(
+            function (p) {
+                const row = createRow(p)
+                tbodyElement.appendChild(row)
+            }
+        )
+    } else {
+        window.alert('No records found')
+    }
 }
 
 function filterAndLoadProducts(e) {
     const filterText = e.target.value.toLocaleLowerCase()
-    let records = products
-    if (filterText !== '') {
-        records = products.filter(
+    if (sessionStorage.getItem('products')) {
+        let records = JSON.parse(sessionStorage.getItem('products'))
+        if (filterText !== '') {
+            records = products.filter(
+                function (p) {
+                    const pname = p.name.toLocaleLowerCase()
+                    return pname.indexOf(filterText) !== -1
+                }
+            )
+        }
+        const tbodyElement = document
+            .getElementById('tblProductsBody')
+        tbodyElement.innerHTML = ''
+        records.forEach(
             function (p) {
-                const pname = p.name.toLocaleLowerCase()
-                return pname.indexOf(filterText) !== -1
+                const row = createRow(p)
+                tbodyElement.appendChild(row)
             }
         )
     }
-    const tbodyElement = document
-        .getElementById('tblProductsBody')
-    tbodyElement.innerHTML = ''
-    records.forEach(
-        function (p) {
-            const row = createRow(p)
-            tbodyElement.appendChild(row)
-        }
-    )
 }
 
 window.addEventListener(

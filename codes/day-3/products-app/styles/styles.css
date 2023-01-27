@@ -8,3 +8,9 @@
   margin: 2px;
   width: 75px;
 }
+.centerStyle {
+  text-align: center;
+}
+.submitStyle {
+  margin: 10px;
+}
