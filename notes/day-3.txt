@@ -1,0 +1,139 @@
+var obj={
+	name:'',
+	email:'',
+	mobile:1111,
+	image:''
+}
+
+class Contact{	
+	protected string name;
+	private string email;
+	private long mobile;
+	private string image;
+	private static string company='deloitte';
+	private string trainingInfo;
+
+	
+	public Contact(){}
+	public Contact(string cName, string cEmail,.....){
+		name = cName;
+		email = cEmail;
+		...............
+	}
+	public string getName(){
+		return name
+	}
+	public void setName(string newName){
+		name= newName
+	}
+	public static string getCompany(){
+		return company
+	}
+	public static string printInfo(){
+		return company
+	}
+}
+
+main(){
+	Contact c = new Contact('','',11111,'','',...)
+	c.getName() 
+	c.printInfo()
+	Contact.company
+}
+
+
+
+
+Car
+	=> chasisNo
+	=> powerwheel
+	=> hilAssist
+	=> isAc
+
+	=> start
+	=> stop
+	=> break
+
+
+struct Contact{
+	string name;
+	long mobile, string email, string image, string company
+};
+int i
+for(i=0;i<27;i++){
+		string name;
+	long mobile, string email, string image, string company
+		printf()
+		scanf()
+}
+
+
+
+class: blueprint
+		attributes and functionalities
+encapsulation
+data abstraction
+object: instances created based on that blueprint
+member types: static and non-static/instance
+constructor: a special type of method
+getter-setter
+
+employee:
+employee()
+name, id, dept, basic, da, hra
+virtual int calculateSalary(){ return basic+da+hra}
+
+developer:employee
+incentive
+developer(), developer(.....)
+
+override int calculateSalary(){ basic+da+hra+incentive}
+
+d.calculateSalary()
+
+hr:
+name, id, dept, basic, da, hra, gratuity
+hr(), hr(.....)
+calculateSalary(){basic+da+hra+gratuity}
+
+staff:
+staff(), staff(.....)
+calculateSalary()
+name, id, dept, basic, da, hra
+
+class calculation{
+	int add(int x, int y){}
+	int add(int x, int y, int z){}
+	int add(int x, int y, float z){}
+	int add(int x, float z, int y){}
+}
+
+c.add(1,2,3.4)
+
+a+b
+a.concat(b)
+a.func(b)
+
+polymorphism: 
+	static/compile time:
+			a. function/method overloading
+			b. operator overloading
+	dynamic/run-time:
+			method overriding
+
+abstract class Reader
+	public string read()=0;
+
+FileReader <= Reader
+		public string read(){}
+
+DbReader <= Reader
+		read()
+
+
+
+
+
+					 
+
+	
